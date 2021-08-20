@@ -22,8 +22,8 @@ const hbs = exphbs.create({
 	partialsDir: path.join(__dirname, 'views/partials'),
 	extname: '.hbs',
 });
-app.engine('hbs', hbs.engine);
-app.set('view engine', 'hbs');
+app.engine('.hbs', hbs.engine);
+app.set('view engine', '.hbs');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(
 	session({
 		secret: ['kadjc98c.qef,eaascaasc[q,', 'esfwpe.wqfoeofeqneq,fp[q'],
-		resave: false,
+		resave: true,
 		saveUninitialized: false,
 	})
 );
