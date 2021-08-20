@@ -1,8 +1,17 @@
+:root {
+	--navbar-background: #ffb5a7;
+	--secondary-color: #fcd5ce;
+	--site-background: #f8edeb;
+	--fourth-color: #f9dcc4;
+	--fifth-color: #fec89a;
+	--base-color: #7ebc89;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 50px;
+	font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+	background: var(--site-background);
 }
 
 a {
-  color: #00B7FF;
+	color: #00b7ff;
 }
