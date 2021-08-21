@@ -1,11 +1,12 @@
 :root {
-	--navbar-background: #ffb5a7;
-	--secondary-color: #fcd5ce;
+	--navbar-background: #e5989b;
+	--shadow-color: #ffb4a2;
 	--site-background: #f8edeb;
-	--fourth-color: #f9dcc4;
+	--fourth-color: #ffcdb2;
 	--fifth-color: #fec89a;
 	--base-color: #7ebc89;
-	--link-color: #2F3E46;
+	--link-color: #6d6875;
+  --hover-color: #b5838d;
 }
 
 * {
@@ -13,12 +14,22 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
 	font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 	background: var(--site-background);
 }
-
+.title{
+  margin: 100px 0;
+  font-size: 2.5em;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.section-spacing{
+  margin: 100px 0;
+}
 #navigation {
 	position: fixed;
 	top: -120vh;
@@ -124,4 +135,51 @@ body {
 }
 #nav-section .navbar-content .menu img:hover{
   background-color: var(--fourth-color);
+}
+
+#hero{
+  width: 100%;
+  height: 80vh;
+}
+#hero .hero-section{
+  width: 100%;
+  height: 100%;
+  background: var(--navbar-background);
+}
+#hero .hero-section::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 80vh;
+  background: var(--site-background);
+}
+#social .row .col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#social .row .col img{
+  width: 60px;
+}
+#nuestros-servicios a{
+  text-decoration: none;
+  color: black;
+}
+#nuestros-servicios .card{
+  border-radius: 10px;
+  box-shadow: 6px 6px 20px var(--shadow-color);
+  margin-bottom: 25px;
+}
+#nuestros-servicios .card .card-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#nuestros-servicios .card .card-body p{
+  font-size: 1.2em;
+}
+#nuestros-servicios .card img{
+  width: 300px;
 }
