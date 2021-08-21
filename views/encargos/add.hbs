@@ -1,0 +1,22 @@
+<section class="section-spacing" id="agregar-producto">
+    <div class="container">
+        <div class="pt-5">
+            <h2 class="text-center title">Agregar producto</h2>
+            <form id="formulario-encargo" action="/encargos" method="POST" class="row g-3 needs-validation" novalidate>
+                <h4 class="text-muted">Detalles del producto</h4>
+                <div class="col-sm-12 col-md-8">
+                    <input type="url" name="linkProducto" id="linkProducto" class="form-control mb-2" placeholder="link">
+                </div>
+                <div class="col-6 col-md-2">
+                    <input type="text" name="tallaProducto" id="tallaProducto" class="form-control mb-2" placeholder="talla">
+                </div>
+                <div class="col-4 col-md-2">
+                    <input type="number" name="catidadProducto" id="catidadProducto" class="form-control mb-2" placeholder="cantidad" required>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary rounded-pill">Agregar producto</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
