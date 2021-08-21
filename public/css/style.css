@@ -211,3 +211,6 @@ body {
 #footer .row .col ul li:hover a{
   text-decoration: underline;
 }
+#encargos-section{
+  margin-top: 100px;
+}
