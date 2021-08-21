@@ -11,6 +11,7 @@ let flash = require('connect-flash');
 //Importing routes
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
+let encargoRouter = require('./routes/encargos.routes');
 
 let app = express();
 
@@ -41,8 +42,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 
+//Using routes
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use(encargoRouter);
 
 app.use((req, res, next) => {
 	app.locals.success = req.flash('success');
