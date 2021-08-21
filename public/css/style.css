@@ -3,7 +3,7 @@
 	--shadow-color: #ffb4a2;
 	--site-background: #f8edeb;
 	--fourth-color: #ffcdb2;
-	--fifth-color: #fec89a;
+	--border-color: #fec89a;
 	--base-color: #7ebc89;
 	--link-color: #6d6875;
   --hover-color: #b5838d;
@@ -46,7 +46,7 @@ body {
   right: 2em;
   width: 60px;
   height: 60px;
-  border: 1px solid var(--fifth-color);
+  border: 1px solid var(--border-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -182,4 +182,32 @@ body {
 }
 #nuestros-servicios .card img{
   width: 300px;
+}
+#footer{
+  padding: 20px 0px;
+  margin: 0 20px;
+  border-top: 1px solid var(--border-color);
+}
+#footer .row .col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#footer .row .col ul{
+  list-style: none;
+}
+#footer .row .col ul li{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+#footer .row .col ul li img{
+  width: 50px;
+}
+#footer .row .col ul li a{
+  text-decoration: none;
+  color: var(--link-color);
+}
+#footer .row .col ul li:hover a{
+  text-decoration: underline;
 }
