@@ -54,6 +54,19 @@ body {
 	height: 50px;
 	border-radius: 50%;
 }
+.form-control {
+	border-radius: 30px;
+	box-shadow: 6px 6px 20px var(--shadow-color);
+	border: 0px;
+	height: 50px;
+}
+.form-control:focus {
+	box-shadow: 2px 2px 10px inset var(--shadow-color);
+}
+.form-control::placeholder {
+	color: rgb(85, 85, 85);
+	font-size: 1.2em;
+}
 #navigation {
 	position: fixed;
 	top: -120vh;
@@ -170,7 +183,7 @@ body {
 
 #hero {
 	width: 100%;
-	height: 80vh;
+	height: 90vh;
 }
 #hero .hero-section {
 	width: 100%;
@@ -262,19 +275,6 @@ body {
 #encargos-section {
 	margin-top: 100px;
 }
-#formulario-encargo .form-control {
-	border-radius: 30px;
-	box-shadow: 6px 6px 20px var(--shadow-color);
-	border: 0px;
-	height: 50px;
-}
-#formulario-encargo .form-control:focus {
-	box-shadow: 2px 2px 10px inset var(--shadow-color);
-}
-#formulario-encargo .form-control::placeholder {
-	color: rgb(85, 85, 85);
-	font-size: 1.2em;
-}
 #contact-form .form-control {
 	border-radius: 30px;
 	box-shadow: 6px 6px 20px var(--shadow-color);
@@ -304,7 +304,30 @@ body {
 	-ms-animation: social-media-animation 3s ease-in-out alternate;
 	-o-animation: social-media-animation 3s ease-in-out alternate;
 }
-
+#auth-user-section {
+	width: 100%;
+	height: 100vh;
+}
+#auth-user-section .container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#auth-user-section .card {
+	width: 320px;
+	background: var(--footer-background);
+	color: var(--link-color);
+	border-radius: 10px;
+}
+#auth-user-section .card .card-body .card-title {
+	margin: 15px 0 30px 0;
+}
+#auth-user-section form .submit-btn {
+	display: flex;
+	justify-content: center;
+	margin: 40px 0 5px 0;
+}
 @keyframes social-media-animation {
 	0% {
 		transform: translateY(0px);

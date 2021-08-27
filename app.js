@@ -13,6 +13,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const encargoRouter = require('./routes/encargos.routes');
 const contactRouter = require('./routes/contact.routes');
+const authRouter = require('./routes/auth.routes');
 
 let app = express();
 
@@ -48,6 +49,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use(encargoRouter);
 app.use(contactRouter);
+app.use(authRouter);
 
 app.use((req, res, next) => {
 	app.locals.success = req.flash('success');
