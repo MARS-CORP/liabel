@@ -1,0 +1,39 @@
+<section class="section-spacing" id="auth-user-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="text-center card-title">Crear cuenta</h4>
+                        <form action="/signup" method="post" enctype="application/x-www-form-urlencoded" id="signin-form" class="needs-validation row g-3">
+                            <div class="col-sm-12">
+                                <input type="text" name="name" id="name" class="form-control mb-2" placeholder="Nombre" required>
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="text" name="apellido" id="apellido" class="form-control mb-2" placeholder="Apellido" required>
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="email" name="email" id="email" class="form-control mb-2" placeholder="Email (opcional)">
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="tel" name="telefono" id="telefono" class="form-control mb-2" placeholder="Telefono" required>
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="text" name="username" id="username" class="form-control mb-2" placeholder="nombre de usuario (ej: lisa57)" required>
+                                <p class="text-muted form-text">El nombre de usuario debe ser &uacute;nico para cada usuario</p>
+                            </div>
+                            <div class="col submit-btn">
+                                <button type="submit" class="btn">Crear cuenta</button>
+                            </div>
+                        </form>
+                        <div class="col-sm-12">
+                            <p class="text-center has-account">
+                                ¿Ya tiene una cuenta? <a href="/signin">Iniciar sesi&oacute;n</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
