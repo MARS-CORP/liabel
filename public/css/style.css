@@ -32,7 +32,7 @@ body {
 .section-spacing {
 	margin: 100px 0;
 }
-.btn{
+.btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,11 +45,11 @@ body {
 	transition: 1.2s;
 	font-weight: 600;
 }
-.btn:hover{
+.btn:hover {
 	color: var(--footer-background);
 	background: var(--hover-color);
 }
-.btn.btn-circle{
+.btn.btn-circle {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -180,7 +180,7 @@ body {
 	background-position: center;
 	background-size: cover;
 }
-#hero .hero-section .container{
+#hero .hero-section .container {
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -188,7 +188,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 }
-#hero .hero-section .container .row{
+#hero .hero-section .container .row {
 	width: 100%;
 }
 #hero .hero-section .card {
@@ -198,27 +198,19 @@ body {
 	box-shadow: 2px 2px 20px var(--shadow-color);
 	margin-bottom: 80px;
 }
-#hero .hero-section .container .ver-mas{
+#hero .hero-section .container .ver-mas {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-#hero .hero-section .card .card-title{
+#hero .hero-section .card .card-title {
 	margin: 15px 0 25px 0;
 }
-#hero .hero-section .card blockquote{
+#hero .hero-section .card blockquote {
 	display: block;
 	font-size: 1.1rem;
 	font-weight: 600;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-#social .row .col {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-#social .row .col img {
-	width: 60px;
 }
 #nuestros-servicios a {
 	text-decoration: none;
@@ -271,28 +263,69 @@ body {
 	margin-top: 100px;
 }
 #formulario-encargo .form-control {
-  border-radius: 30px;
-  box-shadow: 6px 6px 20px var(--shadow-color);
-  border: 0px;
-  height: 50px;
+	border-radius: 30px;
+	box-shadow: 6px 6px 20px var(--shadow-color);
+	border: 0px;
+	height: 50px;
 }
 #formulario-encargo .form-control:focus {
-  box-shadow: 2px 2px 10px inset var(--shadow-color);
+	box-shadow: 2px 2px 10px inset var(--shadow-color);
 }
-#formulario-encargo .form-control::placeholder{
-  color: rgb(85, 85, 85);
-  font-size: 1.2em;
+#formulario-encargo .form-control::placeholder {
+	color: rgb(85, 85, 85);
+	font-size: 1.2em;
 }
 #contact-form .form-control {
-  border-radius: 30px;
-  box-shadow: 6px 6px 20px var(--shadow-color);
-  border: 0px;
-  height: 50px;
+	border-radius: 30px;
+	box-shadow: 6px 6px 20px var(--shadow-color);
+	border: 0px;
+	height: 50px;
 }
 #contact-form .form-control:focus {
-  box-shadow: 2px 2px 10px inset var(--shadow-color);
+	box-shadow: 2px 2px 10px inset var(--shadow-color);
 }
-#contact-form .form-control::placeholder{
-  color: rgb(85, 85, 85);
-  font-size: 1.2em;
+#contact-form .form-control::placeholder {
+	color: rgb(85, 85, 85);
+	font-size: 1.2em;
+}
+#social .row .col {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#social .row .col img {
+	width: 60px;
+}
+#social .row .col img:hover {
+	width: 60px;
+	animation: social-media-animation 3s ease-in-out alternate;
+	-webkit-animation: social-media-animation 3s ease-in-out alternate;
+	-moz-animation: social-media-animation 3s ease-in-out alternate;
+	-ms-animation: social-media-animation 3s ease-in-out alternate;
+	-o-animation: social-media-animation 3s ease-in-out alternate;
+}
+
+@keyframes social-media-animation {
+	0% {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		-o-transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-30px) rotateY(720deg);
+		-webkit-transform: translateY(-30px) rotateY(720deg);
+		-ms-transform: translateY(-30px) rotateY(720deg);
+		-moz-transform: translateY(-30px) rotateY(720deg);
+		-o-transform: translateY(-30px) rotateY(720deg);
+	}
+
+	100% {
+		transform: translateY(0px) rotateY(0deg);
+		-webkit-transform: translateY(0px) rotateY(0deg);
+		-ms-transform: translateY(0px) rotateY(0deg);
+		-moz-transform: translateY(0px) rotateY(0deg);
+		-o-transform: translateY(0px) rotateY(0deg);
+	}
 }
