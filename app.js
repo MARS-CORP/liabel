@@ -9,9 +9,10 @@ let passport = require('passport');
 let flash = require('connect-flash');
 
 //Importing routes
-let indexRouter = require('./routes/index');
-let usersRouter = require('./routes/users');
-let encargoRouter = require('./routes/encargos.routes');
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
+const encargoRouter = require('./routes/encargos.routes');
+const contactRouter = require('./routes/contact.routes');
 
 let app = express();
 
@@ -46,6 +47,7 @@ app.use(flash());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use(encargoRouter);
+app.use(contactRouter);
 
 app.use((req, res, next) => {
 	app.locals.success = req.flash('success');

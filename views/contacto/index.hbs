@@ -1,0 +1,32 @@
+<section id="contacto-section" class="section-spacing">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center title">Contacto</h2>
+            <p class="text-center">
+                Puede contactarnos a trav&eacute;s de nuestro formulario o desde nuestras redes sociales. Si&eacute;ntase libre de preguntarnos cualquier inquietud y nosotros le responderemos lo m&aacute;s pronto posible.
+            </p>
+            <form action="/contacto" method="post" id="contact-form" class="row g-3 need-validation">
+                <div class="col-sm-12 col-md-2">
+                    <input type="text" name="name" id="name" class="form-control mb-2" placeholder="Nombre" required>
+                </div>
+                <div class="col-sm-12 col-md-2">
+                    <input type="text" name="lastname" id="lastname" class="form-control mb-2" placeholder="Apellido" required>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <input type="email" name="email" id="email" class="form-control mb-2" placeholder="Email (opcional)">
+                </div>
+                <div class="col-sm-12 col-md-2">
+                    <input type="tel" name="telefono" id="telefono" class="form-control mb-2" placeholder="Telefono" required>
+                </div>
+                <div class="col-sm-12">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control mb-2" placeholder="Su mensaje" required></textarea>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary rounded-pill">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+{{> social}}

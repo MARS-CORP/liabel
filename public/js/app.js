@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 
-	let menu = document.querySelector('.menu');
+	let menu = document.querySelector('#nav-section .menu img');
 	let closeMenu = document.querySelector('.menu-close');
 
 	menu.addEventListener('click', () => {
