@@ -15,6 +15,10 @@ const encargoRouter = require('./routes/encargos.routes');
 const contactRouter = require('./routes/contact.routes');
 const authRouter = require('./routes/auth.routes');
 
+//Importing model
+let userModel = require('./database/models').User;
+require('./middlewares/auth')(passport, userModel);
+
 let app = express();
 
 // view engine setup
@@ -30,7 +34,7 @@ app.set('view engine', '.hbs');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(
