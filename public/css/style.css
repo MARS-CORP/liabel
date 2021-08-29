@@ -188,7 +188,7 @@ body {
 #hero .hero-section {
 	width: 100%;
 	height: 100%;
-	background-image: url('/img/header_image.jpg');
+	background-image: url('https://res.cloudinary.com/waytraveltrek/image/upload/v1630271805/proyectos/liabel/header_image_rqxdrl.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
