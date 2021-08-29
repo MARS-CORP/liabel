@@ -7,6 +7,7 @@ let exphbs = require('express-handlebars');
 let session = require('express-session');
 let passport = require('passport');
 let flash = require('connect-flash');
+let favicon = require('serve-favicon');
 
 //Importing routes
 const indexRouter = require('./routes/index');
@@ -47,6 +48,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
+app.use(favicon(path.join(__dirname, 'public/favicon.ico')));
 
 //Using routes
 app.use('/', indexRouter);
