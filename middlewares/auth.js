@@ -48,6 +48,7 @@ module.exports = (passport, user) => {
 						apellido: req.body.apellido,
 						email: req.body.email,
 						telefono: req.body.telefono,
+						direccion: req.body.direccion,
 						username: req.body.username,
 						password: req.body.password,
 					};
