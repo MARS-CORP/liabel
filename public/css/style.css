@@ -363,6 +363,10 @@ a{
 #important-info .card:hover::before{
 	width: 100%;
 }
+#terms ul li{
+	margin-bottom: 20px;
+	font-size: 1.1rem;
+}
 
 
 @keyframes social-media-animation {
