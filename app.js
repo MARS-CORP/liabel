@@ -16,6 +16,7 @@ const encargoRouter = require('./routes/encargos.routes');
 const contactRouter = require('./routes/contact.routes');
 const authRouter = require('./routes/auth.routes');
 const termsRouter = require('./routes/terms.routes');
+const pricingRouter = require('./routes/pricing.routes');
 
 //Importing model
 let userModel = require('./database/models').User;
@@ -58,6 +59,7 @@ app.use(encargoRouter);
 app.use(contactRouter);
 app.use(authRouter);
 app.use(termsRouter);
+app.use(pricingRouter);
 
 app.use((req, res, next) => {
 	app.locals.success = req.flash('success');

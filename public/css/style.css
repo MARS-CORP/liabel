@@ -367,6 +367,9 @@ a{
 	margin-bottom: 20px;
 	font-size: 1.1rem;
 }
+#pricing .card .card-body ul li {
+	margin-bottom: 8px;
+}
 
 
 @keyframes social-media-animation {
