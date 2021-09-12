@@ -1,13 +1,12 @@
 const express = require('express');
 const router = express.Router();
 let passport = require('passport');
+let authController = require('../controllers/auth.controller');
 
 //Rutas para inicio de sesion de usuarios
 router
 	.route('/signin')
-	.get((req, res) => {
-		res.render('auth/signin');
-	})
+	.get(authController.signin)
 	.post(
 		passport.authenticate('local-signin', {
 			successRedirect: '/',
@@ -19,9 +18,7 @@ router
 //Rutas para registro de usuarios
 router
 	.route('/signup')
-	.get((req, res) => {
-		res.render('auth/signup');
-	})
+	.get(authController.signup)
 	.post(
 		passport.authenticate('local-signup', {
 			successRedirect: '/signin',
@@ -31,10 +28,6 @@ router
 	);
 
 //Ruta para cerrar sesion
-router.route('/logout').get((req, res) => {
-	req.logOut();
-
-	res.redirect('/signin');
-});
+router.route('/logout').get(authController.logout);
 
 module.exports = router;

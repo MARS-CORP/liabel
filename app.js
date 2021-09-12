@@ -10,7 +10,7 @@ let flash = require('connect-flash');
 let favicon = require('serve-favicon');
 
 //Importing routes
-const indexRouter = require('./routes/index');
+const indexRouter = require('./routes/index.routes');
 const usersRouter = require('./routes/users');
 const encargoRouter = require('./routes/encargos.routes');
 const contactRouter = require('./routes/contact.routes');
