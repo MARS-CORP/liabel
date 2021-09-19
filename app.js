@@ -43,8 +43,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(
 	session({
 		secret: ['kadjc98c.qef,eaascaasc[q,', 'esfwpe.wqfoeofeqneq,fp[q'],
-		resave: true,
+		resave: false,
 		saveUninitialized: false,
+		cookie: { maxAge: 1200000 },
 	})
 );
 app.use(passport.initialize());

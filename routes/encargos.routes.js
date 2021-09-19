@@ -7,6 +7,6 @@ let helper = require('../helpers/isLogged');
 router.route('/encargos').get(helper.isLoggedIn, encargosController.index);
 
 //Vista para agregar encargo
-router.route('/encargos/add').get(helper.isLoggedIn, encargosController.addIndex);
+router.route('/encargos/add').get(helper.isLoggedIn, encargosController.new);
 
 module.exports = router;
