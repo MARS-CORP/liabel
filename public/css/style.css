@@ -370,6 +370,10 @@ a{
 #pricing .card .card-body ul li {
 	margin-bottom: 8px;
 }
+#faqs .card{
+	height: 300px;
+	overflow: auto;
+}
 
 
 @keyframes social-media-animation {
