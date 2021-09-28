@@ -3,16 +3,17 @@ const User = require('../database/models').User;
 
 module.exports = {
 	index: (req, res) => {
-		Product.findAndCountAll({
-			where: {
-				id: req.user.id,
-			},
-			includes: User,
-		}).then((products) => {
-			res.render('encargos/index', {
-				products,
-			});
-		});
+		// Product.findAll({
+		// 	where: {
+		// 		id: req.user.id,
+		// 	},
+		// 	includes: User,
+		// }).then((products) => {
+		// 	res.render('encargos/index', {
+		// 		products,
+		// 	});
+		// });
+		res.render('encargos/index');
 	},
 	new: (req, res) => {
 		res.render('encargos/add');

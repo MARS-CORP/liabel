@@ -7,9 +7,9 @@ dotenv.config({
 
 module.exports = {
 	development: {
-		username: 'root',
-		password: 'MDR3wnkN*/',
-		database: 'liabel',
+		username: DEV_DB_USERNAME,
+		password: DEV_DB_PASSWORD, 
+		database: DEV_DB_NAME,
 		host: '127.0.0.1',
 		dialect: 'mysql',
 		port: 3307,
